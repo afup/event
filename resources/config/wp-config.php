@@ -76,8 +76,8 @@ $table_prefix  = 'wp_';
  * Il est fortemment recommandé que les développeurs d'extensions et
  * de thèmes se servent de WP_DEBUG dans leur environnement de 
  * développement.
- */ 
-define('WP_DEBUG', true);
+ */
+define('WP_DEBUG', false);
 
 
 define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
