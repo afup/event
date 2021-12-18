@@ -63,25 +63,25 @@ define('NONCE_SALT',       '&u_%N*/=lpw<0~]ktU|1$Sz#77,F!c_Cjx W]/OP<z.S+rFG?O5%
  * Préfixe de base de données pour les tables de WordPress.
  *
  * Vous pouvez installer plusieurs WordPress sur une seule base de données
- * si vous leur donnez chacune un préfixe unique. 
+ * si vous leur donnez chacune un préfixe unique.
  * N'utilisez que des chiffres, des lettres non-accentuées, et des caractères soulignés!
  */
 $table_prefix  = 'wp_2021_';
 
-/** 
+/**
  * Pour les développeurs : le mode deboguage de WordPress.
- * 
+ *
  * En passant la valeur suivante à "true", vous activez l'affichage des
  * notifications d'erreurs pendant votre essais.
  * Il est fortemment recommandé que les développeurs d'extensions et
- * de thèmes se servent de WP_DEBUG dans leur environnement de 
+ * de thèmes se servent de WP_DEBUG dans leur environnement de
  * développement.
  */
 define('WP_DEBUG', false);
 
 
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST']);
-define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
+define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
+define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
 
 
 /* C'est tout, ne touchez pas à ce qui suit ! Bon blogging ! */
