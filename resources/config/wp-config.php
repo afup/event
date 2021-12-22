@@ -28,7 +28,7 @@ define('DB_USER', getenv('MYSQL_ADDON_USER'));
 define('DB_PASSWORD', getenv('MYSQL_ADDON_PASSWORD'));
 
 /** Adresse de l'hébergement MySQL. */
-define('DB_HOST', getenv('MYSQL_ADDON_HOST'));
+define('DB_HOST', getenv('MYSQL_ADDON_HOST') . ':' . getenv('MYSQL_ADDON_PORT'));
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8mb4');
