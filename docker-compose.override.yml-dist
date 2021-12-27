@@ -1,0 +1,9 @@
+version: "2.2"
+services:
+  event:
+    ports:
+      - "9225:80"
+    environment:
+      AFUP_GLOBAL_MENU_PREFIX: 'https://localhost:9205'
+      AFUP_WEBSITE_URL: 'https://apachephp:80'
+

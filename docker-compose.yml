@@ -1,0 +1,26 @@
+version: "2.2"
+
+services:
+  event:
+    build:
+      context: ./docker/dockerfiles/event
+      args:
+        uid: ${CURRENT_UID:-1001}
+        gid: "1001"
+    environment:
+      AFUP_WEBSITE_URL: 'https://apachephp:80'
+    volumes:
+      - ./:/var/www/html
+    links:
+      - dbevent
+
+  dbevent:
+    build: ./docker/dockerfiles/mysql_event
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: afup
+      MYSQL_PASSWORD: afup
+      MYSQL_DATABASE: event
+    volumes:
+      - ./data/mysql_event:/var/lib/mysql
+

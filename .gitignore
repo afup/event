@@ -1,0 +1,6 @@
+/.docker-build
+/data
+/docker-compose.override.yml
+/composer.phar
+/wp
+/vendor
