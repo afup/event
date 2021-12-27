@@ -42,21 +42,21 @@ define('DB_COLLATE', '');
  * Clefs uniques d'authentification et salage.
  *
  * Remplacez les valeurs par défaut par des phrases uniques !
- * Vous pouvez générer des phrases aléatoires en utilisant 
+ * Vous pouvez générer des phrases aléatoires en utilisant
  * {@link https://api.wordpress.org/secret-key/1.1/salt/ le service de clefs secrètes de WordPress.org}.
  * Vous pouvez modifier ces phrases à n'importe quel moment, afin d'invalider tous les cookies existants.
  * Cela forcera également tous les utilisateurs à se reconnecter.
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'xXp5lR3Pw.;Wc2,`&8.)$|8^*Z-Z6I<8z*!1+8TERo$UA9hg 7~I/%cxdXCNKA>6');
-define('SECURE_AUTH_KEY',  'a|TULivMo#3*j[n+J9C?CMoRqLWg+y&XVI-kKvJK^-J MR{Wbr;FlBWyz!b{HxG[');
-define('LOGGED_IN_KEY',    'UGiF=|)N|#x8S+pX&y-`=?Ok/KRJt}(aQ }OSH846;IM,5~Pd(Yy:i>JWVev~#/o');
-define('NONCE_KEY',        'wI1?~(uW[kns(ifyrX$(^rnTX,EsBq0%crDCm?94lio6Bdj%nBw(i[U5-/$(.+sX');
-define('AUTH_SALT',        '[8N2^E?cK#{*u82h/*+hkf-)-@{E+z+5o%S/?p*?2]<P(^Kn=;+N-|4d-JjCOK14');
-define('SECURE_AUTH_SALT', ')e*e^zYy,3-gA0#{knh{H7+1V$D)rmg()9!O2:Yiopm4qFQ6$}Ih/s8,Zjcac1L6');
-define('LOGGED_IN_SALT',   '&hcm.U;DIY|C4r`PGz=wcU86GW||EMD8v_-6qs1P88E:jKe=01yA9%S&y.Co+`W7');
-define('NONCE_SALT',       '&u_%N*/=lpw<0~]ktU|1$Sz#77,F!c_Cjx W]/OP<z.S+rFG?O5%dT+C)r/=_&f;');
+define('AUTH_KEY', getenv('WP_AUTH_KEY'));
+define('SECURE_AUTH_KEY', getenv('WP_SECURE_AUTH_KEY'));
+define('LOGGED_IN_KEY', getenv('WP_LOGGED_IN_KEY'));
+define('NONCE_KEY', getenv('WP_NONCE_KEY'));
+define('AUTH_SALT', getenv('WP_AUTH_SALT'));
+define('SECURE_AUTH_SALT', getenv('WP_SECURE_AUTH_SALT'));
+define('LOGGED_IN_SALT', getenv('WP_LOGGED_IN_SALT'));
+define('NONCE_SALT', getenv('WP_NONCE_SALT'));
 /**#@-*/
 
 /**
