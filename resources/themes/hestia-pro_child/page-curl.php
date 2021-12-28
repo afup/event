@@ -68,6 +68,13 @@ do_action( 'hestia_before_single_page_wrapper' ); ?>
                         curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
                     }
 
+                    $afupBlogApiKey = getenv('AFUP_BLOG_API_KEY');
+                    if ($afupBlogApiKey) {
+                      curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+                          'X-Afup-Blog-Api-Key:' . $afupBlogApiKey,
+                      ));
+                    }
+
                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
                     if (defined('WP_DEBUG') && WP_DEBUG == true) {
