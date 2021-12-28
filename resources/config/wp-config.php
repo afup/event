@@ -77,7 +77,13 @@ $table_prefix  = 'wp_2021_';
  * de thèmes se servent de WP_DEBUG dans leur environnement de
  * développement.
  */
-define('WP_DEBUG', false);
+
+$debug = false;
+if (getenv('WP_DEBUG') == '1') {
+  $debug = true;
+}
+
+define('WP_DEBUG', $debug);
 
 
 define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);

@@ -9,6 +9,12 @@ services:
         gid: "1001"
     environment:
       AFUP_WEBSITE_URL: 'https://apachephp:80'
+      MYSQL_ADDON_DB: event
+      MYSQL_ADDON_USER: afup
+      MYSQL_ADDON_PASSWORD: afup
+      MYSQL_ADDON_HOST: dbevent
+      MYSQL_ADDON_PORT: 3306
+      WP_DEBUG: 1
     volumes:
       - ./:/var/www/html
     links:
