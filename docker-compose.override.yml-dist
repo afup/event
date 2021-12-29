@@ -5,5 +5,5 @@ services:
       - "9225:80"
     environment:
       AFUP_GLOBAL_MENU_PREFIX: 'https://localhost:9205'
-      AFUP_WEBSITE_URL: 'https://apachephp:80'
-
+      AFUP_WEBSITE_URL: 'https://172.17.0.1:9205'
+      AFUP_BLOG_API_KEY: '123456'

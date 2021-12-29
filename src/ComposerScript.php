@@ -17,6 +17,13 @@ class ComposerScript
         ];
     }
 
+    protected static function getDirsToSymlink($baseDir, $wordpressDir)
+    {
+        return [
+            $baseDir . '/resources/uploads' => $wordpressDir  . '/wp-content/uploads',
+        ];
+    }
+
     protected static function getPathsToDelete($wordpressDir)
     {
         return [
@@ -55,6 +62,12 @@ class ComposerScript
                 $filesystem->remove($target);
                 $filesystem->symlink($origin, $target);
             }
+        }
+
+        foreach (self::getDirsToSymlink($baseDir, $wordpressDir) as $sourceDirectory => $wordpressTarget) {
+            $event->getIO()->write($sourceDirectory . ' -> ' . $wordpressTarget);
+            $filesystem->remove($wordpressTarget);
+            $filesystem->symlink($sourceDirectory, $wordpressTarget);
         }
 
         foreach (self::getPathsToDelete($wordpressDir) as $pathToDelete) {
