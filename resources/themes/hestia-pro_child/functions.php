@@ -21,6 +21,13 @@ function afup_website_func($attrs) {
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       }
 
+    $afupBlogApiKey = getenv('AFUP_BLOG_API_KEY');
+    if ($afupBlogApiKey) {
+      curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+          'X-Afup-Blog-Api-Key:' . $afupBlogApiKey,
+      ));
+    }
+
     curl_setopt($ch, CURLOPT_HEADER, false);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($ch, CURLOPT_URL, $url);
