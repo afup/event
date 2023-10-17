@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6b18668e82fc2f68da283afa3988488",
+    "content-hash": "d09d36a1b9caaa318fb59892505498d1",
     "packages": [
         {
             "name": "composer/installers",
@@ -455,25 +455,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/cookie-law-info/"
-        },
-        {
-            "name": "wpackagist-plugin/custom-javascript-editor",
-            "version": "1.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/custom-javascript-editor/",
-                "reference": "tags/1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/custom-javascript-editor.1.1.zip",
-                "reference": "tags/1.1"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/custom-javascript-editor/"
         },
         {
             "name": "wpackagist-plugin/display-posts-shortcode",
