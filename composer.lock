@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d94b4856556776395257528ff3fd7f62",
+    "content-hash": "bcc4920c4a1ecd56c1dc15ece2578cd5",
     "packages": [
         {
             "name": "composer/installers",
@@ -663,24 +663,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/lktags-linkedin-insight-tags/"
-        },
-        {
-            "name": "wpackagist-plugin/qtranslate-x",
-            "version": "3.4.6.8",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/qtranslate-x/",
-                "reference": "tags/3.4.6.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/qtranslate-x.3.4.6.8.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/qtranslate-x/"
         }
     ],
     "packages-dev": [],
