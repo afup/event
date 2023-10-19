@@ -48,6 +48,47 @@ function add_custom_head() {
 }
 add_filter('wp_head', 'add_custom_head');
 
+
+function afup_enqueue_scripts() {
+    wp_enqueue_style(
+        'afup-tarteaucitron-css',
+        get_template_directory_uri() . '_child' . '/assets/css/tarteaucitron.css',
+        [],
+        '1',
+        'all'
+    );
+    wp_enqueue_script(
+        'afup-tarteaucitron',
+        get_template_directory_uri() . '_child' . '/assets/js/tarteaucitron.js',
+        [],
+        '1',
+        true
+    );
+    wp_enqueue_script(
+        'afup-tarteaucitron',
+        get_template_directory_uri() . '_child' . '/assets/js/lang/tarteaucitron.fr.js',
+        [],
+        '1',
+        true
+    );
+    wp_enqueue_script(
+        'afup-tarteaucitron-services',
+        get_template_directory_uri() . '_child' . '/assets/js/tarteaucitron.services.js',
+        [],
+        '1',
+        true
+    );
+    wp_enqueue_script(
+        'afup-tarteaucitron-config',
+        get_template_directory_uri() . '_child' . '/assets/js/tarteaucitron.config.js',
+        [],
+        '1',
+        true
+    );
+}
+
+add_action( 'wp_enqueue_scripts', 'afup_enqueue_scripts' );
+
 if ( !defined( 'ABSPATH' ) ) exit;
 
 if ( !function_exists( 'hestia_child_parent_css' ) ):
