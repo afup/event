@@ -1,6 +1,6 @@
-FROM php:7.0-apache
+FROM php:7.4-apache
 
-RUN echo 'deb http://archive.debian.org/debian stretch main' > /etc/apt/sources.list
+#RUN echo 'deb http://archive.debian.org/debian stretch main' > /etc/apt/sources.list
 
 # Install required php extensions for afup website and other management package
 RUN apt-get update && \
@@ -8,11 +8,11 @@ RUN apt-get update && \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
+        libzip-dev \
         libmcrypt4 \
-        libmcrypt-dev \
         wget && \
-    docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
-    docker-php-ext-install pdo_mysql mbstring mysqli zip gd mcrypt && \
+    docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ && \
+    docker-php-ext-install pdo_mysql mysqli zip gd && \
     apt-get remove -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
