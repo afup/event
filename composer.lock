@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcc4920c4a1ecd56c1dc15ece2578cd5",
+    "content-hash": "85c221415d11d72171d6bc4f0d9a90d7",
     "packages": [
         {
             "name": "composer/installers",
@@ -569,25 +569,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-sitemap-generator/"
-        },
-        {
-            "name": "wpackagist-plugin/googleanalytics",
-            "version": "2.5.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/googleanalytics/",
-                "reference": "tags/2.5.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/googleanalytics.2.5.1.zip",
-                "reference": "tags/2.5.1"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/googleanalytics/"
         },
         {
             "name": "wpackagist-plugin/iframe",
