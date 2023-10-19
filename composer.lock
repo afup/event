@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d09d36a1b9caaa318fb59892505498d1",
+    "content-hash": "9c9e0e42d449cd2cf394bf210357da9e",
     "packages": [
         {
             "name": "composer/installers",
@@ -645,6 +645,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/jquery-t-countdown-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/lktags-linkedin-insight-tags",
+            "version": "1.2.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/lktags-linkedin-insight-tags/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/lktags-linkedin-insight-tags.zip?timestamp=1692908287"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/lktags-linkedin-insight-tags/"
         },
         {
             "name": "wpackagist-plugin/qtranslate-x",

@@ -16,7 +16,8 @@
         "symfony/finder": "^3.3",
         "symfony/polyfill-ctype": "1.18.0",
         "wpackagist-plugin/display-posts-shortcode": "^3.0",
-        "ext-curl": "*"
+        "ext-curl": "*",
+        "wpackagist-plugin/lktags-linkedin-insight-tags": "^1.2"
     },
     "repositories": [
         {
