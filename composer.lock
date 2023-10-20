@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcc4920c4a1ecd56c1dc15ece2578cd5",
+    "content-hash": "d2a5c46e8da818699a9028c4d29c92e4",
     "packages": [
         {
             "name": "composer/installers",
@@ -514,25 +514,6 @@
             "homepage": "https://wordpress.org/plugins/enhanced-media-library/"
         },
         {
-            "name": "wpackagist-plugin/eu-cookie-law",
-            "version": "3.1.6",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/eu-cookie-law/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/eu-cookie-law.zip?timestamp=1607465332",
-                "reference": "trunk"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/eu-cookie-law/"
-        },
-        {
             "name": "wpackagist-plugin/flickr-album-gallery",
             "version": "2.1.8",
             "source": {
@@ -569,25 +550,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-sitemap-generator/"
-        },
-        {
-            "name": "wpackagist-plugin/googleanalytics",
-            "version": "2.5.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/googleanalytics/",
-                "reference": "tags/2.5.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/googleanalytics.2.5.1.zip",
-                "reference": "tags/2.5.1"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/googleanalytics/"
         },
         {
             "name": "wpackagist-plugin/iframe",
