@@ -12,7 +12,9 @@ RewriteRule ^forum-php-2018/accessibilite-et-inclusivite/ /forumphp2018/accessib
 RewriteRule ^afupday2023lille/speakers/ /afup-day-2023/afup-day-2023-lille/conferencier-e-s/ [L,R=301]
 RewriteRule ^afupday2023lyon/speakers/ /afup-day-2023/afup-day-2023-lyon/conferencier-e-s/ [L,R=301]
 RewriteRule ^code-de-conduite https://afup.org/p/986-code-de-conduite [L,R=302]
-
+RewriteRule ^forum-php-2016/tickets-inscriptions/ / [L,R=302]
+RewriteRule ^phptournantes2017/tickets-inscriptions/ / [L,R=302]
+RewriteRule ^php-tour-2016/tickets-inscriptions/ / [L,R=302]
 
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
