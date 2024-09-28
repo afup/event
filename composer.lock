@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50fa49f1fd4d92c9807ea3cc24e7b730",
+    "content-hash": "b4f740d9b4c759de6966c87e2655d429",
     "packages": [
         {
             "name": "composer/installers",
@@ -474,6 +474,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/display-posts-shortcode/"
+        },
+        {
+            "name": "wpackagist-plugin/easy-wp-meta-description",
+            "version": "1.2.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/easy-wp-meta-description/",
+                "reference": "tags/1.2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/easy-wp-meta-description.1.2.6.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/easy-wp-meta-description/"
         },
         {
             "name": "wpackagist-plugin/easy-wp-smtp",
