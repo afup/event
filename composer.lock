@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4f740d9b4c759de6966c87e2655d429",
+    "content-hash": "812bde7d7ff2961ed2cadf533298fddb",
     "packages": [
         {
             "name": "composer/installers",
@@ -476,6 +476,24 @@
             "homepage": "https://wordpress.org/plugins/display-posts-shortcode/"
         },
         {
+            "name": "wpackagist-plugin/duplicate-post",
+            "version": "4.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duplicate-post/",
+                "reference": "tags/4.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.4.5.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duplicate-post/"
+        },
+        {
             "name": "wpackagist-plugin/easy-wp-meta-description",
             "version": "1.2.6",
             "source": {
@@ -655,5 +673,5 @@
         "ext-curl": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }
