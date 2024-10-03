@@ -15,7 +15,8 @@
         "wpackagist-plugin/display-posts-shortcode": "^3.0",
         "ext-curl": "*",
         "wpackagist-plugin/lktags-linkedin-insight-tags": "^1.2",
-        "wpackagist-plugin/easy-wp-meta-description": "^1.2"
+        "wpackagist-plugin/easy-wp-meta-description": "^1.2",
+        "wpackagist-plugin/duplicate-post": "^4.5"
     },
     "repositories": [
         {
