@@ -37,10 +37,12 @@ article.conferenciers {
 
 .conferenciers h3 {
     font-family: Roboto, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
+    font-weight: bold;
     color: #045e80;
-    float: left;
+}
+.conferenciers h3 .societe {
+    font-weight: normal;
+    font-size: 23px;
 }
 
 article.conferenciers a.twitter {
@@ -267,10 +269,25 @@ footer .widget_nav_menu a{
     top: 5px;
 }
 
-.twitter-follow-button {
+.follow-button {
+    display: inline-flex;
     margin: 0 15px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    background-color: #CCC;
+    color: #045e80;
 }
-
+.follow-button:hover {
+    background-color: #045e80;
+    color: #fff;
+}
+.follow-button svg {
+    margin-right: 5px;
+}
 article .basis-list ul {
     list-style-position: inside;
 }
