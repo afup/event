@@ -105,12 +105,14 @@ article.conferenciers {
 }
 
 .conferenciers h3 {
-	/* font-family: Roboto, Helvetica, sans-serif; */
-	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: bold;
 	color: #045e80;
 	display: inline-block;
 	margin-right: 1rem;
+}
+.conferenciers h3 .societe {
+	font-weight: normal;
+	font-size: 23px;
 }
 
 .conferenciers img, .conferencier img{
@@ -124,9 +126,25 @@ article.conferenciers {
 	margin-bottom: 20px;
 }
 
-article.conferenciers a.twitter {
-	display: inline-block;
-	margin-left: 20px;
+
+.follow-button {
+	display: inline-flex;
+	margin: 0 15px;
+	align-items: center;
+	font-weight: bold;
+	font-size: 12px;
+	border-radius: 9999px;
+	padding: 4px 12px;
+	box-sizing: border-box;
+	background-color: #CCC;
+	color: #045e80;
+}
+.follow-button:hover {
+	background-color: #045e80;
+	color: #fff;
+}
+.follow-button svg {
+	margin-right: 5px;
 }
 
 article.conferenciers, .article-body.conferencier {
