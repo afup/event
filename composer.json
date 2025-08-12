@@ -1,6 +1,6 @@
 {
     "require": {
-        "johnpbloch/wordpress": "5.8.10",
+        "johnpbloch/wordpress": "5.8.11",
         "wpackagist-plugin/cookie-law-info" : "1.5.3",
         "wpackagist-plugin/easy-wp-smtp" : "1.4.6",
         "wpackagist-plugin/enhanced-media-library" : "2.4.4",
