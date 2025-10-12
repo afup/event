@@ -12,7 +12,7 @@
         "symfony/filesystem": "^3.3",
         "symfony/finder": "^3.3",
         "symfony/polyfill-ctype": "1.18.0",
-        "wpackagist-plugin/display-posts-shortcode": "^3.0",
+        "wpackagist-plugin/display-posts-shortcode": "^3.0.3",
         "ext-curl": "*",
         "wpackagist-plugin/lktags-linkedin-insight-tags": "^1.2",
         "wpackagist-plugin/easy-wp-meta-description": "^1.2",
