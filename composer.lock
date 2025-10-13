@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5edd8f9de4ad0b7d1bcc1ef68a27663a",
+    "content-hash": "999bfbd1e1114ce625c6dd5e818a7f3b",
     "packages": [
         {
             "name": "composer/installers",
@@ -643,19 +643,18 @@
         },
         {
             "name": "wpackagist-plugin/jquery-t-countdown-widget",
-            "version": "2.3.16",
+            "version": "2.3.25",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jquery-t-countdown-widget/",
-                "reference": "tags/2.3.16"
+                "reference": "tags/2.3.25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jquery-t-countdown-widget.2.3.16.zip",
-                "reference": "tags/2.3.16"
+                "url": "https://downloads.wordpress.org/plugin/jquery-t-countdown-widget.2.3.25.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/jquery-t-countdown-widget/"
