@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5edd8f9de4ad0b7d1bcc1ef68a27663a",
+    "content-hash": "64f1a450ab1ac7aed2662563c7b44112",
     "packages": [
         {
             "name": "composer/installers",
@@ -642,25 +642,6 @@
             "homepage": "https://wordpress.org/plugins/insert-php/"
         },
         {
-            "name": "wpackagist-plugin/jquery-t-countdown-widget",
-            "version": "2.3.16",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/jquery-t-countdown-widget/",
-                "reference": "tags/2.3.16"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jquery-t-countdown-widget.2.3.16.zip",
-                "reference": "tags/2.3.16"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/jquery-t-countdown-widget/"
-        },
-        {
             "name": "wpackagist-plugin/lktags-linkedin-insight-tags",
             "version": "1.2.6",
             "source": {
@@ -682,12 +663,12 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "ext-curl": "*"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
