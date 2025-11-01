@@ -26,6 +26,9 @@ docker-compose.override.yml:
 vendors:
 	CURRENT_UID=$(CURRENT_UID) ENABLE_XDEBUG=$(ENABLE_XDEBUG) docker-compose run event make vendor
 
+shell:
+	CURRENT_UID=$(CURRENT_UID) ENABLE_XDEBUG=$(ENABLE_XDEBUG) docker-compose run event /bin/bash
+
 data:
 	mkdir data
 	mkdir data/composer
