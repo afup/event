@@ -25,6 +25,10 @@
         {
             "matchManagers": [ "composer" ],
             "rangeStrategy": "bump"
+        },
+        {
+            "matchManagers": [ "dockerfile" ],
+            "enabled": false
         }
     ]
 }
