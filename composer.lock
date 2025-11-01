@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2668dd652e1b704b64e0c1b6bae0c2cd",
+    "content-hash": "dbacc90d913e924ccf71e7969beab4d7",
     "packages": [
         {
             "name": "composer/installers",
@@ -511,25 +511,6 @@
             "time": "2024-09-09T11:45:10+00:00"
         },
         {
-            "name": "wpackagist-plugin/cookie-law-info",
-            "version": "1.5.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/cookie-law-info/",
-                "reference": "tags/1.5.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cookie-law-info.1.5.3.zip",
-                "reference": "tags/1.5.3"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/cookie-law-info/"
-        },
-        {
             "name": "wpackagist-plugin/display-posts-shortcode",
             "version": "3.0.3",
             "source": {
@@ -718,12 +699,12 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "ext-curl": "*"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
