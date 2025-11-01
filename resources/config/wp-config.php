@@ -108,3 +108,9 @@ require_once(ABSPATH . 'wp-settings.php');
 
 define('FS_METHOD','direct');
 
+// Automatic updates
+define('AUTOMATIC_UPDATER_DISABLED', true);
+define('WP_AUTO_UPDATE_CORE', false);
+
+// Security
+define('DISALLOW_FILE_EDIT', true);
