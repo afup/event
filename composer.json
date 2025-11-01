@@ -2,7 +2,6 @@
     "require": {
         "johnpbloch/wordpress": "5.9.12",
         "wpackagist-plugin/easy-wp-smtp" : "1.4.6",
-        "wpackagist-plugin/enhanced-media-library" : "2.4.4",
         "wpackagist-plugin/flickr-album-gallery" : "^2.1",
         "wpackagist-plugin/google-sitemap-generator": "^4.1.21",
         "wpackagist-plugin/iframe": "^4.5",
