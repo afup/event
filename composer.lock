@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19eac430d4c6cebaaed477cc336cd0af",
+    "content-hash": "31b255cd8c235c9d33dc9d82edf714d0",
     "packages": [
         {
             "name": "composer/installers",
@@ -585,19 +585,18 @@
         },
         {
             "name": "wpackagist-plugin/flickr-album-gallery",
-            "version": "2.1.8",
+            "version": "2.2.14",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/flickr-album-gallery/",
-                "reference": "tags/2.1.8"
+                "reference": "tags/2.2.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/flickr-album-gallery.2.1.8.zip",
-                "reference": "tags/2.1.8"
+                "url": "https://downloads.wordpress.org/plugin/flickr-album-gallery.2.2.14.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "^1.0 || ^2.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/flickr-album-gallery/"
@@ -680,12 +679,12 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "ext-curl": "*"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
