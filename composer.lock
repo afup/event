@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af6998772b61a7f54d34b5ae7ca95760",
+    "content-hash": "0e175c44c8506b8bfc8db26bf67e3db6",
     "packages": [
         {
             "name": "composer/installers",
@@ -604,15 +604,15 @@
         },
         {
             "name": "wpackagist-plugin/google-sitemap-generator",
-            "version": "4.1.21",
+            "version": "4.1.23",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-sitemap-generator/",
-                "reference": "tags/4.1.21"
+                "reference": "tags/4.1.23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.21.zip"
+                "url": "https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.23.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -680,12 +680,12 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "ext-curl": "*"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
