@@ -221,7 +221,9 @@ class Hestia_Blog_Post_Layout {
 		$post_body_content .= '</div>';
 
 		if ( $type === 'default' ) {
-			$post_body_content .= $this->render_post_meta();
+			// on ne veux pas sur la page catégorie (listant les articles) afficher la personne qui les a postés
+			// on commente donc cela
+			//$post_body_content .= $this->render_post_meta();
 		}
 
 		if ( $type === 'alt-2' ) {
