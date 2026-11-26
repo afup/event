@@ -56,16 +56,16 @@ do_action( 'hestia_before_single_page_wrapper' ); ?>
 /*print_r(file_get_contents('php://input'));*/
                     if (isset($_POST) && get_post_meta(get_the_ID(), 'curl_handle_post', true) === 'true') {
                                                 curl_setopt($ch, CURLOPT_POST, 1);
-                        $post = $_POST;
+                        $post_fields = $_POST;
                                                 if (isset($_FILES)) {
                                                     foreach ($_FILES as $name => $file) {
                                 if ($file['size'] !== 0) {
-                                    $post[$name] = new \CURLFile($file['tmp_name'], $file['type'], $file['name']);
+                                    $post_fields[$name] = new \CURLFile($file['tmp_name'], $file['type'], $file['name']);
                                 }
                         }
                                                 }
 
-                        curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+                        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields);
                     }
 
                     $afupBlogApiKey = getenv('AFUP_BLOG_API_KEY');

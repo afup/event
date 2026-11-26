@@ -134,7 +134,7 @@ final class Hestia_Content_Import {
 	 * @access private
 	 * @since  1.1.49
 	 */
-	private final function prefix_theme_mods( $mods ) {
+	private function prefix_theme_mods( $mods ) {
 		$prefix = str_replace( '-', '_', $this->previous_theme ) . '_';
 		if ( ! empty( $mods ) ) {
 			foreach ( $mods as $hestia_mod => $previous_mod_unprefixed ) {
@@ -152,7 +152,7 @@ final class Hestia_Content_Import {
 	 * @access private
 	 * @since  1.1.49
 	 */
-	private final function add_exceptions() {
+	private function add_exceptions() {
 		// Add exceptions and bail if there's another theme than these three.
 		switch ( $this->previous_theme ) {
 			case 'azera-shop':
@@ -405,7 +405,7 @@ final class Hestia_Content_Import {
 	 * @access private
 	 * @since  1.1.49
 	 */
-	private final function set_hestia_mod( $hestia_mod_id, $imported_mod_id ) {
+	private function set_hestia_mod( $hestia_mod_id, $imported_mod_id ) {
 		$hestia_mod = get_theme_mod( $hestia_mod_id );
 		if ( ! empty( $this->previous_theme_content[ $imported_mod_id ] ) ) {
 			$imported_mod = $this->previous_theme_content[ $imported_mod_id ];

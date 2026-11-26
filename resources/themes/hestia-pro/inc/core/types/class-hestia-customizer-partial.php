@@ -14,7 +14,7 @@ class Hestia_Customizer_Partial {
 	 *
 	 * @var string the control ID.
 	 */
-	public $control_id;
+	public $id;
 
 	/**
 	 * Args for the partial.

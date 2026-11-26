@@ -11,6 +11,27 @@
 class Hestia_Admin {
 
 	/**
+	 * Theme name.
+	 *
+	 * @var string
+	 */
+	public $theme_name;
+
+	/**
+	 * Theme slug.
+	 *
+	 * @var string
+	 */
+	public $theme_slug;
+
+	/**
+	 * Whether the welcome notice should be displayed.
+	 *
+	 * @var bool
+	 */
+	public $should_show_welcome = false;
+
+	/**
 	 * Register the stylesheets for the admin area.
 	 *
 	 * @since    1.0.0
