@@ -1,8 +1,11 @@
-
-# BEGIN WordPress
+# Règles spécifiques au site : à garder hors du bloc "BEGIN WordPress",
+# que WordPress réécrit à chaque flush des permaliens (activation de plugin, réglages...).
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
+
+# Transmet l'en-tête Authorization à PHP (Application Passwords / OAuth du serveur MCP)
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
 RewriteRule ^en/(.*) $1 [L,R=302]
 
@@ -15,7 +18,16 @@ RewriteRule ^code-de-conduite https://afup.org/p/986-code-de-conduite [L,R=302]
 RewriteRule ^forum-php-2016/tickets-inscriptions/ / [L,R=302]
 RewriteRule ^phptournantes2017/tickets-inscriptions/ / [L,R=302]
 RewriteRule ^php-tour-2016/tickets-inscriptions/ / [L,R=302]
+</IfModule>
 
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -23,5 +35,3 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
-
-
