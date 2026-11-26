@@ -111,7 +111,7 @@ class Hestia_Translations_Manager extends Hestia_Abstract_Main {
 	 * @param bool/json $default Default value.
 	 * @param String    $name Name for polylang backend.
 	 */
-	private function pll_string_register_helper( $theme_mod, $default = false, $name ) {
+	private function pll_string_register_helper( $theme_mod, $default = false, $name = null ) {
 		if ( ! function_exists( 'pll_register_string' ) ) {
 			return;
 		}

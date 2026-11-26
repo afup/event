@@ -33,7 +33,6 @@ function afup_website_func($attrs) {
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $body = curl_exec($ch);
-    curl_close($ch);
 
     return $body;
 }
