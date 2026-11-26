@@ -89,6 +89,18 @@ define('WP_DEBUG', $debug);
 define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
 define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
 
+define('FS_METHOD','direct');
+
+// Automatic updates
+define('AUTOMATIC_UPDATER_DISABLED', true);
+define('WP_AUTO_UPDATE_CORE', false);
+
+// Security
+define('DISALLOW_FILE_EDIT', true);
+// Core, plugins et thèmes viennent de composer.json : rien ne s'installe ni ne se met à jour
+// depuis l'admin (les changements seraient perdus au prochain déploiement Clever Cloud)
+define('DISALLOW_FILE_MODS', true);
+
 
 /* C'est tout, ne touchez pas à ce qui suit ! Bon blogging ! */
 
@@ -105,12 +117,3 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once(ABSPATH . 'wp-settings.php');
-
-define('FS_METHOD','direct');
-
-// Automatic updates
-define('AUTOMATIC_UPDATER_DISABLED', true);
-define('WP_AUTO_UPDATE_CORE', false);
-
-// Security
-define('DISALLOW_FILE_EDIT', true);
