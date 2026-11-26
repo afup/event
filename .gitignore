@@ -4,3 +4,6 @@
 /composer.phar
 /wp
 /vendor
+
+# État local de inpsyde/wp-translation-downloader : commité, il bloquerait le téléchargement au build
+/wp-translation-downloader.lock
