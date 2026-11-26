@@ -12,7 +12,6 @@ class ComposerScript
         return [
             $baseDir . '/resources/web' => $wordpressDir . '/',
             $baseDir . '/resources/themes' => $wordpressDir  . '/wp-content/themes/',
-            $baseDir . '/resources/languages' => $wordpressDir  . '/wp-content/languages/',
             $baseDir . '/resources/config' => $wordpressDir . '/',
         ];
     }

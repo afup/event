@@ -14,7 +14,8 @@
         "wpackagist-plugin/duplicate-post": "^4.7",
         "wpackagist-plugin/wordpress-seo": "^28.9",
         "wpackagist-plugin/mcp-adapter": "^0.7.2",
-        "wpackagist-plugin/enable-abilities-for-mcp": "^2.17"
+        "wpackagist-plugin/enable-abilities-for-mcp": "^2.17",
+        "inpsyde/wp-translation-downloader": "^2.6"
     },
     "repositories": [
         {
@@ -28,7 +29,13 @@
                 "type:wordpress-plugin"
             ]
         },
-        "wordpress-install-dir": "wp"
+        "wordpress-install-dir": "wp",
+        "wp-translation-downloader": {
+            "languages": [
+                "fr_FR"
+            ],
+            "directory": "wp/wp-content/languages"
+        }
     },
     "autoload": {
         "psr-4": {
@@ -42,7 +49,8 @@
     "config": {
         "allow-plugins": {
             "johnpbloch/wordpress-core-installer": true,
-            "composer/installers": true
+            "composer/installers": true,
+            "inpsyde/wp-translation-downloader": true
         }
     }
 }
