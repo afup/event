@@ -80,9 +80,14 @@ require_once( HESTIA_CORE_DIR . 'class-hestia-autoloader.php' );
 /**
  * The start of the app.
  *
+ * Lancé sur after_setup_theme (priorité 0) et non au chargement du fichier :
+ * les features traduisent des chaînes à leur construction, ce que WordPress
+ * signale comme trop tôt avant after_setup_theme. Les hooks after_setup_theme
+ * qu'elles enregistrent (priorités 10 et plus) sont toujours exécutés.
+ *
  * @since   1.0.0
  */
-hestia_run();
+add_action( 'after_setup_theme', 'hestia_run', 0 );
 
 /**
  * Append theme name to the upgrade link

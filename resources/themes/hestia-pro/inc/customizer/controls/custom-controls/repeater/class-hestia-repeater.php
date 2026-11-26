@@ -172,8 +172,8 @@ class Hestia_Repeater extends WP_Customize_Control {
 
 		$this->allowed_html = array_merge( $allowed_array1, $allowed_array2 );
 
-		$value       = json_decode( $this->value(), true );
-		$this->value = $this->rec_wp_parse_args( $value, json_decode( $this->default, true ) );
+		$value       = json_decode( (string) $this->value(), true );
+		$this->value = $this->rec_wp_parse_args( $value, json_decode( (string) $this->default, true ) );
 		if ( empty( $this->value ) ) {
 			$this->value = $this->get_empty_value();
 		}

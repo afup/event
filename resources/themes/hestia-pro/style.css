@@ -3808,6 +3808,17 @@ table > tbody > tr:last-child,
   color: rgba(255, 255, 255, 0.76);
 }
 
+/* AFUP : depuis WordPress 6.x, les classes de couleur des blocs (.has-*-color) sont
+   en !important dans les global styles et écrasaient le texte blanc des titres
+   de la section « about » sur image. On rétablit la priorité de Hestia. */
+.hestia-about.section-image h1.has-text-color, .hestia-about.section-image h2.has-text-color, .hestia-about.section-image h3.has-text-color, .hestia-about.section-image h4.has-text-color, .hestia-about.section-image h5.has-text-color {
+  color: #fff !important;
+}
+
+.hestia-about.section-image h6.has-text-color {
+  color: rgba(255, 255, 255, 0.76) !important;
+}
+
 .hestia-about .customizer-hidden {
   display: none;
 }
