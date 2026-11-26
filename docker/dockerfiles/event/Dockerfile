@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:8.5-apache
 
 # Install required php extensions for afup website and other management package
 RUN apt-get update && \
@@ -7,7 +7,6 @@ RUN apt-get update && \
         libjpeg62-turbo-dev \
         libpng-dev \
         libzip-dev \
-        libmcrypt4 \
         wget && \
     docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ && \
     docker-php-ext-install pdo_mysql mysqli zip gd && \

@@ -1,0 +1,34 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        ":dependencyDashboard",
+        ":semanticPrefixFixDepsChoreOthers",
+        ":ignoreModulesAndTests",
+        ":automergeDisabled",
+        ":configMigration",
+        "group:monorepos",
+        "group:recommended",
+        "replacements:all",
+        "workarounds:all"
+    ],
+    "prConcurrentLimit": 1,
+    "packageRules": [
+        {
+            "dependencyDashboardApproval": true,
+            "matchUpdateTypes": [ "major" ]
+        },
+        {
+            "matchManagers": [ "composer" ],
+            "matchDepNames": [ "php" ],
+            "enabled": false
+        },
+        {
+            "matchManagers": [ "composer" ],
+            "rangeStrategy": "bump"
+        },
+        {
+            "matchManagers": [ "dockerfile" ],
+            "enabled": false
+        }
+    ]
+}

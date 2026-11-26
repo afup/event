@@ -474,7 +474,7 @@ class Hestia_Import_Zerif extends Hestia_Import_Utilities {
 	 * @access private
 	 * @since  1.1.51
 	 */
-	private final function set_hestia_mod( $hestia_mod_id, $imported_mod_id ) {
+	private function set_hestia_mod( $hestia_mod_id, $imported_mod_id ) {
 		$hestia_mod = get_theme_mod( $hestia_mod_id );
 		if ( array_key_exists( $imported_mod_id, $this->previous_theme_content ) ) {
 			$imported_mod = $this->previous_theme_content[ $imported_mod_id ];

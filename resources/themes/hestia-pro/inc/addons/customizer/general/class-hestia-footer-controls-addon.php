@@ -122,7 +122,7 @@ class Hestia_Footer_Controls_Addon extends Hestia_Register_Customizer_Controls {
 	 * @since 1.1.34
 	 */
 	public function footer_alignment_callback() {
-		$footer = new Hestia_Footer_Manager();
+		$footer = new Hestia_Footer();
 
 		return $footer->bottom_footer_content();
 	}

@@ -21,7 +21,7 @@ add_filter( 'woocommerce_show_page_title', 'hestia_woocommerce_hide_page_title' 
 
 /* Move breadcrumbs on the single page */
 if ( is_single( 'product' ) ) {
-	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 }
 add_action( 'woocommerce_before_single_product_summary', 'woocommerce_breadcrumb', 10, 0 );
 
